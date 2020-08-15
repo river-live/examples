@@ -33,10 +33,11 @@
       </form>
 
       <h2>Completed task</h2>
-
-      <% for(var i = 0; i < complete.length; i++){ %>
-      <li><input type="checkbox" checked /><%= complete[i] %></li>
-      <% } %>
+      <ul id="completedTasks">
+        <% for(var i = 0; i < complete.length; i++){ %>
+        <li><input type="checkbox" checked /><%= complete[i] %></li>
+        <% } %>
+      </ul>
     </div>
     <script src="/app.js"></script>
   </body>

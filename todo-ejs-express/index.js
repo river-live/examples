@@ -25,12 +25,18 @@ app.post("/addtask", function (req, res) {
   var newTask = req.body.newtask;
   //add the new task from the post route
   task.push(newTask);
+  river.publish("todos-ejs-1234", "addtask", newTask);
   res.redirect("/");
 });
 
 app.post("/removetask", function (req, res) {
   var completeTask = req.body.check;
-  console.log(completeTask);
+
+  let tasksToSendToRiver = completeTask;
+  if (!Array.isArray(completeTask)) {
+    tasksToSendToRiver = [completeTask];
+  }
+
   //check for the "typeof" the different completed task, then add into the complete task
   if (typeof completeTask === "string") {
     complete.push(completeTask);
@@ -42,6 +48,7 @@ app.post("/removetask", function (req, res) {
       task.splice(task.indexOf(completeTask[i]), 1);
     }
   }
+  river.publish("todos-ejs-1234", "removetask", tasksToSendToRiver);
   res.redirect("/");
 });
 
