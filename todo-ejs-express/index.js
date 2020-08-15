@@ -48,6 +48,7 @@ app.post("/removetask", function (req, res) {
       task.splice(task.indexOf(completeTask[i]), 1);
     }
   }
+
   river.publish("todos-ejs-1234", "removetask", tasksToSendToRiver);
   res.redirect("/");
 });
