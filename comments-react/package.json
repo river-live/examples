@@ -16,6 +16,8 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "json-beautify": "^1.1.1",
+    "river-client-js": "^0.3.0",
+    "river-http-node": "^0.2.2",
     "uuid": "^7.0.3"
   }
 }

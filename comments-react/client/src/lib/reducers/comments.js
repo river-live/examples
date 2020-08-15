@@ -12,6 +12,14 @@ export const comments = (state = [], action) => {
       return state.concat(commentsWithoutReplies);
 
     case "COMMENT_ADDED":
+      // check if comment is already there, idempotency!
+      const found = state.find((comment) => {
+        return comment.id === action.payload.newComment.id;
+      });
+
+      if (found) {
+        return state;
+      }
       return state.concat(action.payload.newComment);
 
     default:
