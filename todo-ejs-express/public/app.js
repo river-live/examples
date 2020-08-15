@@ -1,8 +1,8 @@
 const river = new River({
   host:
-    "http://river-river-11N1Y2OTC4WXY-1683057197.us-east-1.elb.amazonaws.com",
+    "http://river-river-1WGV06P09EOKU-2004340702.us-east-1.elb.amazonaws.com",
   jwt:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.Ru7Cn_dREy3hoaA8wDSonoAsL-EiRdAVyg05nj7nN1M",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1hcmsiLCJpYXQiOjE1MTYyMzkwMjJ9.e1G__eCxr7SOyjhWFyku5Duo53s8NgOhHLN2r7ROcaM",
 });
 
 river.subscribe("todos-ejs-1234");

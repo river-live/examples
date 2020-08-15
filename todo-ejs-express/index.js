@@ -4,8 +4,8 @@ var bodyParser = require("body-parser");
 const River = require("river-http-node");
 
 const river = new River({
-  host: "https://p4iul0q6zb.execute-api.us-east-1.amazonaws.com/publish",
-  key: "p4iul0q6zb",
+  host: "https://bybefkmq8e.execute-api.us-east-1.amazonaws.com/publish",
+  key: "publisherD8510803",
 });
 
 var app = express();
