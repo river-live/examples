@@ -1,28 +1,19 @@
-# nodejs-todo
+# Todo List Demo
 
-<h2> A simple To Do List application built with Node.js and Express</h2>
+This is a simple demo app to show how you can leverage River to easily convert an existing application to realtime.
 
-<p> Nodejs application that let's you add and complete task on a single page, storing both new and completed task in a different array. This appllication makes use of: </p>
+Credits and thanks to [@missating](https://github.com/missating/nodejs-todo) for the inspiration for the Todo list app itself!
 
-<ul>
-<li> EJS - A simple templating engine that lets you generate HTML markup with plain JS </li>
+To use this with River, you neep to deploy the River infrastructure first. See the [deploy repo](https://github.com/river-live/deploy) for more information.
 
-<li> Body-parser - This extracts the entire body portion of an incoming request stream and exposes it on req.body </li>
-</ul>
+The deploy script will output all the information you need:
 
-![png](https://github.com/missating/nodejs-todo/blob/master/todo.png?raw=true 'web todo')
+- Your server (`server.js`) needs to know the address of the API Gateway, as well as the key. The key is used as a simple means of authentication.
+- Your frontend code (`app.js`) needs to know the address of the load balancer, as well as the secret. You need to generate a valid Jason Web Token using the provided secret. You can easily do so [here](https://jwt.io/).
 
-<br>
+To start the application, run:
 
-<p> How to run the app locally: </p>
+- `npm install` to install the dependencies
+- `npm start` to start the server
 
-<ol>
-<li> Run <code> npm install </code> to install all needed dependencies </li>
-
-<li> Then start the server using <code> node index.js </code> </li>
-
-<li> Navigate to your browser <code> http://localhost:3000/ </code> to view the app </li>
-</ol>
-
-<p> I wrote a blog post on how to build this app, you can check it out <a href="https://medium.com/@atingenkay/creating-a-todo-app-with-node-js-express-8fa51f39b16f" target="_blank">Here</a>
-
+Navigate to localhost:3000 to see your wonderful app in action!

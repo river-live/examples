@@ -1,13 +1,18 @@
 {
-  "name": "nodejs-todo",
+  "name": "todo-demo",
   "version": "1.0.0",
-  "description": "A simple to do list app ",
-  "main": "index.js",
+  "description": "A simple todo list app, used as a demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Vanessa Ating",
-  "license": "ISC",
+  "contributors": [
+    "Mark Hyams",
+    "Catherine Emond"
+  ],
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.0",
     "ejs": "^2.5.7",
