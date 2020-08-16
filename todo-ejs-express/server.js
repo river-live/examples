@@ -16,7 +16,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 // This mimics your database :)
-const tasks = ["complete demo", "gym"];
+const tasks = ["demo", "gym"];
 const completed = [];
 
 app.post("/add-task", (req, res) => {
@@ -28,7 +28,7 @@ app.post("/add-task", (req, res) => {
 });
 
 app.post("/remove-task", (req, res) => {
-  let done = req.body.check;
+  let done = req.body.task;
 
   const markAsComplete = (task) => {
     completed.push(task);

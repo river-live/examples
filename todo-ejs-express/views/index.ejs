@@ -14,6 +14,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
+      body {
+        margin: auto;
+        width: 40rem;
+      }
       .center {
         display: flex;
         justify-content: center;
@@ -28,7 +32,7 @@
     </style>
   </head>
   <body>
-    <section class="hero">
+    <section class="hero is-medium">
       <div class="hero-body">
         <h1 class="title center">Welcome to the Todo App!</h1>
         <div class="section pb-0">
@@ -54,7 +58,7 @@
               <ul id="added-tasks">
                 <% tasks.forEach(task => { %>
                 <li>
-                  <input type="checkbox" name="check" value="<%= task %>" /><%=
+                  <input type="checkbox" name="task" value="<%= task %>" /><%=
                   task %>
                 </li>
                 <% }) %>
