@@ -11,7 +11,7 @@ To use this with River, you neep to deploy the River infrastructure first. See t
 The deploy script will output all the information you need:
 
 - Your server (`server.js`) needs to know the address of the API Gateway, as well as the key. The key is used as a simple means of authentication.
-- Your frontend code (`app.js`) needs to know the address of the load balancer, as well as the secret. You need to generate a valid Jason Web Token using the provided secret. You can easily do so [here](https://jwt.io/).
+- Your frontend code (`app.js`) needs to know the address of the load balancer, as well as the secret. You need to generate a valid JSON Web Token using the provided secret. You can easily do so [here](https://jwt.io/).
 
 ## Useful commands
 
