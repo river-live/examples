@@ -21,19 +21,26 @@ const ParentComment = ({ comment, onShowMoreReplies }) => {
   });
 
   return (
-    <div className="parent-comment">
+    <div className="box">
       <Comment {...comment} />
-      <div className="replies">
-        {replies.map((reply) => {
-          return <Comment key={reply.id} {...reply} />;
-        })}
+      <hr></hr>
+      {replies.length === 0 ? null : (
+        <div className="box">
+          {replies.map((reply) => {
+            return <Comment key={reply.id} {...reply} />;
+          })}
 
-        {comment.replies_count === replies.length ? null : (
-          <a href="#" className="show_more" onClick={handleShowMoreReplies}>
-            Show More Replies ({comment.replies_count - 1})
-          </a>
-        )}
-      </div>
+          {comment.replies_count === replies.length ? null : (
+            <a
+              href="#"
+              className="is-size-7 mb-2"
+              onClick={handleShowMoreReplies}
+            >
+              Show More Replies ({comment.replies_count - 1})
+            </a>
+          )}
+        </div>
+      )}
     </div>
   );
 };

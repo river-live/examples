@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./Menu";
 import CommentList from "./CommentList";
 import CommentForm from "./CommentForm";
 import store from "../lib/store.js";
@@ -24,9 +25,14 @@ river.on("new-comment", (riverPayload) => {
 
 const CommentApp = () => {
   return (
-    <div>
-      <CommentList />
-      <CommentForm />
+    <div className="columns">
+      <div className="column is-one-fifth">
+        <Menu />
+      </div>
+      <div className="column is-four-fifths">
+        <CommentList />
+        <CommentForm />
+      </div>
     </div>
   );
 };

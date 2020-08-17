@@ -22,8 +22,8 @@ class CommentList extends React.Component {
 
   render() {
     return (
-      <div className="comments">
-        <h2>Comments (2)</h2>
+      <div className="section">
+        <h2 className="title">Comments</h2>
         {store.getState().comments.map((comment) => (
           <ParentComment
             key={comment.id}

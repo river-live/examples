@@ -38,30 +38,36 @@ class CommentForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} action="">
-        <h2>Post a Comment</h2>
-        <div className="input-group">
-          <label>Your Name</label>
-          <input
-            value={this.state.author}
-            onChange={this.handleInput}
-            type="text"
-            name="author"
-          />
-        </div>
+      <div className="section">
+        <form onSubmit={this.handleSubmit} action="">
+          <h2 className="subtitle">Post a Comment</h2>
+          <div className="field">
+            <label className="label">Your Name</label>
+            <input
+              className="input"
+              value={this.state.author}
+              onChange={this.handleInput}
+              type="text"
+              name="author"
+            />
+          </div>
 
-        <div className="input-group">
-          <label>Your Comment</label>
-          <textarea
-            value={this.state.body}
-            onChange={this.handleInput}
-            name="body"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+          <div className="field">
+            <label className="label">Your Comment</label>
+            <textarea
+              className="textarea"
+              value={this.state.body}
+              onChange={this.handleInput}
+              name="body"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button className="button is-primary" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
     );
   }
 }
