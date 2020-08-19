@@ -1,0 +1,63 @@
+[
+  {
+    "id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e",
+    "author": "Mark Hyams",
+    "body": "Hello World!",
+    "postedAt": 1550488214207,
+    "replies_count": 2,
+    "replies": [
+      {
+        "id": "1d549a1b-4db1-4c10-9941-60c3a0c111cb",
+        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e",
+        "author": "Sean Cohen",
+        "body": "River is a really cool project! Where can I learn more?",
+        "postedAt": 1550434979501
+      },
+      {
+        "id": "1ea28899-c449-41da-9403-d22f1c71055c",
+        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e",
+        "author": "Norberto Sauer",
+        "body": "You should look at the GitHub account.",
+        "postedAt": 1550419112520
+      }
+    ]
+  },
+  {
+    "id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+    "author": "Catherine Emond",
+    "body": "Hello there :)",
+    "postedAt": 1550450855783,
+    "replies_count": 3,
+    "replies": [
+      {
+        "id": "80ed5281-7fc7-4386-b98d-355907e6e0c1",
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+        "author": "Vivian Adams",
+        "body": "We've been using it at work, it's great! Where can we send feature requests?",
+        "postedAt": 1550486931293
+      },
+      {
+        "id": "792c0552-670d-4f0a-b40a-006f230289f8",
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+        "author": "Amalia Bartoletti",
+        "body": "The team is happy with the results so far.",
+        "postedAt": 1550493776763
+      },
+      {
+        "id": "5c1536c7-12be-48c0-912b-995a12d79c54",
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+        "author": "Sydnie Jacobi",
+        "body": "Yeah, great work!",
+        "postedAt": 1550470739427
+      }
+    ]
+  },
+  {
+    "author": "Bob",
+    "body": "Hello",
+    "id": "3ab71dfb-8883-4909-adf1-773f36f9e22a",
+    "postedAt": 1597677034251,
+    "replies_count": 0,
+    "replies": []
+  }
+]
