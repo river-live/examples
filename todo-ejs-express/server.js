@@ -1,13 +1,18 @@
-const express = require("express");
-const bodyParser = require("body-parser");
 const River = require("river-http-node");
 
-const app = express();
-
-// These will be your own values -- here as an example
 const river = new River({
   host: "https://bybefkmq8e.execute-api.us-east-1.amazonaws.com/publish",
   key: "publisherD8510803",
+});
+
+// ... more code
+
+app.post("/add-task", (req, res) => {
+  var task = req.body.task;
+  tasks.push(task);
+  river.publish("todos", "add-task", task);
+
+  res.redirect("/");
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
