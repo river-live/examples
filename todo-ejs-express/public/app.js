@@ -1,4 +1,5 @@
-// These will be your own values -- here as an example:
+const River = require("river-client-js");
+
 const river = new River({
   host:
     "http://river-river-1WGV06P09EOKU-2004340702.us-east-1.elb.amazonaws.com",
@@ -6,7 +7,13 @@ const river = new River({
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1hcmsiLCJpYXQiOjE1MTYyMzkwMjJ9.e1G__eCxr7SOyjhWFyku5Duo53s8NgOhHLN2r7ROcaM",
 });
 
-river.subscribe("todos-ejs-1234");
+river.subscribe("todos");
+
+// ... more code
+
+river.on("add-task", (payload) => {
+  addTask(payload.data);
+});
 
 const addTask = (newTask) => {
   const li = document.createElement("li");
