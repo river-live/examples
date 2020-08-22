@@ -32,16 +32,16 @@ app.post("/api/comments", (req, res) => {
     res.json(newComment);
 
     // Publish new comment to River on AWS
-    river.publish("comments-1234", "new-comment", newComment);
+    // river.publish("comments-1234", "new-comment", newComment);
   } else {
     res.status(401).json({ error: "Please check your inputs" });
   }
 });
 
 app.post("/api/comment_replies", (req, res) => {
-  const comment_id = +req.params.comment_id;
+  const comment_id = req.body.comment_id;
+  const { reply } = req.body;
 
-  const { comment_reply } = req.params;
   const newReply = data.saveReplyToComment(comment_id, reply);
   if (newReply) {
     res.json(newReply);

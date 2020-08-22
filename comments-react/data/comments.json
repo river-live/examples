@@ -27,7 +27,7 @@
     "author": "Catherine Emond",
     "body": "Hello there :)",
     "postedAt": 1550450855783,
-    "replies_count": 3,
+    "replies_count": 5,
     "replies": [
       {
         "id": "80ed5281-7fc7-4386-b98d-355907e6e0c1",
@@ -49,6 +49,20 @@
         "author": "Sydnie Jacobi",
         "body": "Yeah, great work!",
         "postedAt": 1550470739427
+      },
+      {
+        "author": "Mark",
+        "body": "reply from curl",
+        "id": "41b9266a-b4e5-4364-ba72-693e3802d962",
+        "postedAt": 1598132652385,
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9"
+      },
+      {
+        "author": "Mark",
+        "body": "reply from curl again!",
+        "id": "6009d67d-9deb-4100-bf5a-56ea999326f9",
+        "postedAt": 1598132770676,
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9"
       }
     ]
   },
@@ -57,6 +71,22 @@
     "body": "Hello",
     "id": "3ab71dfb-8883-4909-adf1-773f36f9e22a",
     "postedAt": 1597677034251,
+    "replies_count": 0,
+    "replies": []
+  },
+  {
+    "author": "Mark",
+    "body": "A new comment",
+    "id": "58bc897c-f919-475d-9d48-c8d77557e2e5",
+    "postedAt": 1598130651062,
+    "replies_count": 0,
+    "replies": []
+  },
+  {
+    "author": "Mark",
+    "body": "A new comment",
+    "id": "3ab47a70-6d2f-4fd3-86bc-9dd69d573a54",
+    "postedAt": 1598130704637,
     "replies_count": 0,
     "replies": []
   }
