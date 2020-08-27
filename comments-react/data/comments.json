@@ -52,42 +52,18 @@
       },
       {
         "author": "Mark",
-        "body": "reply from curl",
-        "id": "41b9266a-b4e5-4364-ba72-693e3802d962",
-        "postedAt": 1598132652385,
+        "body": "a new reply from CURL",
+        "id": "b541ade5-8873-4995-9827-1a1510d17b85",
+        "postedAt": 1598569826470,
         "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9"
       },
       {
         "author": "Mark",
-        "body": "reply from curl again!",
-        "id": "6009d67d-9deb-4100-bf5a-56ea999326f9",
-        "postedAt": 1598132770676,
+        "body": "another new reply from CURL",
+        "id": "7961ca19-1e76-4593-87ad-3c6749dc2d60",
+        "postedAt": 1598569917696,
         "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9"
       }
     ]
-  },
-  {
-    "author": "Bob",
-    "body": "Hello",
-    "id": "3ab71dfb-8883-4909-adf1-773f36f9e22a",
-    "postedAt": 1597677034251,
-    "replies_count": 0,
-    "replies": []
-  },
-  {
-    "author": "Mark",
-    "body": "A new comment",
-    "id": "58bc897c-f919-475d-9d48-c8d77557e2e5",
-    "postedAt": 1598130651062,
-    "replies_count": 0,
-    "replies": []
-  },
-  {
-    "author": "Mark",
-    "body": "A new comment",
-    "id": "3ab47a70-6d2f-4fd3-86bc-9dd69d573a54",
-    "postedAt": 1598130704637,
-    "replies_count": 0,
-    "replies": []
   }
 ]

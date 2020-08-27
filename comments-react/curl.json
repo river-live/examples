@@ -1,0 +1,15 @@
+{
+  "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+  "reply": {
+    "author": "Mark",
+    "body": "a new reply from CURL"
+  }
+}
+
+curl -X POST -H "Content-Type: application/json" -d '{
+  "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9",
+  "reply": {
+    "author": "Mark",
+    "body": "another new reply from CURL"
+  }
+}' http://localhost:3000/api/comment_replies

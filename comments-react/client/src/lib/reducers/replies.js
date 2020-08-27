@@ -8,6 +8,7 @@ export const replies = (state = [], action) => {
       return state.concat(replies);
 
     case "REPLIES_FETCHED":
+      console.log(state);
       return state.concat(action.payload.replies);
 
     default:

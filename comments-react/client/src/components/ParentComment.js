@@ -2,8 +2,28 @@ import React from "react";
 import Comment from "./Comment";
 import store from "../lib/store.js";
 
-const ParentComment = ({ comment, onShowMoreReplies }) => {
-  const handleShowMoreReplies = (event) => {
+class ParentComment extends React.Component {
+  state = {
+    showReplyForm: false,
+    replies: [],
+  };
+
+  componentDidMount() {
+    const replies = store.getState().replies.filter((reply) => {
+      const { comment } = this.props;
+      return reply.comment_id === comment.id;
+    });
+
+    this.setState((prevState) => {
+      return {
+        replies: prevState.replies.concat(replies),
+      };
+    });
+  }
+
+  handleShowMoreReplies = (event) => {
+    const { comment } = this.props;
+
     event.preventDefault();
 
     fetch(`/api/comment_replies?comment_id=${comment.id}`)
@@ -13,36 +33,44 @@ const ParentComment = ({ comment, onShowMoreReplies }) => {
           type: "REPLIES_FETCHED",
           payload: { replies: restOfReplies },
         });
+
+        this.setState((prevState) => {
+          return {
+            replies: prevState.replies.concat(restOfReplies),
+          };
+        });
       });
   };
 
-  const replies = store.getState().replies.filter((reply) => {
-    return reply.comment_id === comment.id;
-  });
+  render() {
+    const { comment } = this.props;
+    return (
+      <div className="box">
+        <Comment {...comment} />
+        <a href="#" className="is-size-7 mb-2">
+          Reply
+        </a>
+        <hr></hr>
+        {this.state.replies.length === 0 ? null : (
+          <div className="box">
+            {this.state.replies.map((reply) => {
+              return <Comment key={reply.id} {...reply} />;
+            })}
 
-  return (
-    <div className="box">
-      <Comment {...comment} />
-      <hr></hr>
-      {replies.length === 0 ? null : (
-        <div className="box">
-          {replies.map((reply) => {
-            return <Comment key={reply.id} {...reply} />;
-          })}
-
-          {comment.replies_count === replies.length ? null : (
-            <a
-              href="#"
-              className="is-size-7 mb-2"
-              onClick={handleShowMoreReplies}
-            >
-              Show More Replies ({comment.replies_count - 1})
-            </a>
-          )}
-        </div>
-      )}
-    </div>
-  );
-};
+            {comment.replies_count === this.state.replies.length ? null : (
+              <a
+                href="#"
+                className="is-size-7 mb-2"
+                onClick={this.handleShowMoreReplies}
+              >
+                Show More Replies ({comment.replies_count - 1})
+              </a>
+            )}
+          </div>
+        )}
+      </div>
+    );
+  }
+}
 
 export default ParentComment;
