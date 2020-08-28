@@ -40,7 +40,7 @@ class ReplyForm extends Component {
     return (
       <div className="section">
         <form onSubmit={this.handleSubmit} action="">
-          <h2 className="subtitle">Post a Comment</h2>
+          <h2 className="subtitle">Reply to this Comment</h2>
           <div className="field">
             <label className="label">Your Name</label>
             <input
@@ -60,7 +60,7 @@ class ReplyForm extends Component {
               onChange={this.handleInput}
               name="body"
               cols="30"
-              rows="10"
+              rows="5"
             ></textarea>
           </div>
           <button className="button is-primary" type="submit">

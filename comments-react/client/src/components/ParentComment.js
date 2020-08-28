@@ -1,6 +1,7 @@
 import React from "react";
 import Comment from "./Comment";
 import store from "../lib/store.js";
+import ReplyForm from "./ReplyForm";
 
 class ParentComment extends React.Component {
   state = {
@@ -42,14 +43,30 @@ class ParentComment extends React.Component {
       });
   };
 
+  handleShowReplyForm = (event) => {
+    event.preventDefault();
+
+    this.setState({
+      showReplyForm: true,
+    });
+  };
+
   render() {
     const { comment } = this.props;
     return (
       <div className="box">
         <Comment {...comment} />
-        <a href="#" className="is-size-7 mb-2">
-          Reply
-        </a>
+        {this.state.showReplyForm ? (
+          <ReplyForm />
+        ) : (
+          <a
+            href="#"
+            className="is-size-7 mb-2"
+            onClick={this.handleShowReplyForm}
+          >
+            Reply
+          </a>
+        )}
         <hr></hr>
         {this.state.replies.length === 0 ? null : (
           <div className="box">
