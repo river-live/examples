@@ -22,6 +22,19 @@ export const comments = (state = [], action) => {
       }
       return state.concat(action.payload.newComment);
 
+    case "REPLY_ADDED":
+      // increment count of replies by one
+      return state.map((comment) => {
+        if (comment.id === action.payload.newReply.comment_id) {
+          const newAmount = comment.replies_count + 1;
+          return Object.assign({}, comment, {
+            replies_count: newAmount,
+          });
+        } else {
+          return comment;
+        }
+      });
+
     default:
       return state;
   }
