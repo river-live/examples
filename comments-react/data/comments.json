@@ -27,7 +27,7 @@
     "author": "Catherine Emond",
     "body": "Hello there :)",
     "postedAt": 1550450855783,
-    "replies_count": 3,
+    "replies_count": 4,
     "replies": [
       {
         "id": "80ed5281-7fc7-4386-b98d-355907e6e0c1",
@@ -49,6 +49,13 @@
         "author": "Sydnie Jacobi",
         "body": "Yeah, great work!",
         "postedAt": 1550470739427
+      },
+      {
+        "author": "Mark",
+        "body": "another new reply from CURL",
+        "id": "f767da4b-51b9-45b7-8f45-ce89aa830e2c",
+        "postedAt": 1598580647891,
+        "comment_id": "8ec290c8-6b97-497d-90d7-f6329ba931a9"
       }
     ]
   },
