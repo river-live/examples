@@ -3,6 +3,7 @@ import Comment from "./Comment";
 import store from "../lib/store.js";
 
 const ParentComment = ({ comment, onShowMoreReplies }) => {
+  // move this function to CommentList component so that reply form can be shown when "show more replies" is clicked
   const handleShowMoreReplies = (event) => {
     event.preventDefault();
 
