@@ -1,9 +1,8 @@
 // These will be your own values -- here as an example:
 const river = new River({
-  host:
-    "http://river-river-1WGV06P09EOKU-2004340702.us-east-1.elb.amazonaws.com",
+  host: "river-river-Y6EE4J4UI7DW-20454086.us-east-1.elb.amazonaws.com",
   jwt:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1hcmsiLCJpYXQiOjE1MTYyMzkwMjJ9.e1G__eCxr7SOyjhWFyku5Duo53s8NgOhHLN2r7ROcaM",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.4V4guYoUGVrUafImZ9gYVo-1Okcx-iXcnprz747zSno",
 });
 
 river.subscribe("todos-ejs-1234");
