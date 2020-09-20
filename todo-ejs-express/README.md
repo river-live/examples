@@ -24,4 +24,4 @@ Navigate to localhost:3000 to see your wonderful app in action!
 
 ## Note
 
-Lambda functions are known for having a "cold start". This is usually not a problem with a running application with some amount of traffic, but you might exprience some delay for the first minute or two when you start this demo application. After that, the updates on the UI should be immediate.
+AWS Lambda functions are known for having a ["cold start"](https://itnext.io/serverless-framework-warming-up-aws-lambda-to-avoid-cold-start-2be579475531). This is usually not a problem with a running application with some amount of traffic, but you might exprience some delay for the first minute or two when you start this demo application. After that, the updates on the UI should be immediate.
