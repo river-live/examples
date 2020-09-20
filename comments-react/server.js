@@ -5,8 +5,8 @@ const data = require("./data/data");
 const River = require("river-http-node");
 
 const river = new River({
-  host: "https://bybefkmq8e.execute-api.us-east-1.amazonaws.com/publish",
-  key: "publisherD8510803",
+  host: "https://ok1msxzm3k.execute-api.us-east-1.amazonaws.com/publish",
+  key: "81d3c67f85e4dd2b860dd481c6367e56",
 });
 
 const app = express();

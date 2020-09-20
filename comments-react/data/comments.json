@@ -59,5 +59,29 @@
     "postedAt": 1597677034251,
     "replies_count": 0,
     "replies": []
+  },
+  {
+    "author": "Catherine",
+    "body": "Hello World",
+    "id": "cc8fc365-a1a4-4195-835c-da856378fb0e",
+    "postedAt": 1600626746109,
+    "replies_count": 0,
+    "replies": []
+  },
+  {
+    "author": "Alice",
+    "body": "Hi!",
+    "id": "dc990bb9-c51e-46f5-9543-cad23d1a44b5",
+    "postedAt": 1600626764494,
+    "replies_count": 0,
+    "replies": []
+  },
+  {
+    "author": "Catherine",
+    "body": "Good morning sunshine!",
+    "id": "f117733d-c353-470a-994a-179e28cdffe9",
+    "postedAt": 1600626792112,
+    "replies_count": 0,
+    "replies": []
   }
 ]
