@@ -39,9 +39,9 @@ app.post("/api/comments", (req, res) => {
 });
 
 app.post("/api/comment_replies", (req, res) => {
-  const comment_id = +req.params.comment_id;
+  const comment_id = req.body.comment_id;
+  const { reply } = req.body;
 
-  const { comment_reply } = req.params;
   const newReply = data.saveReplyToComment(comment_id, reply);
   if (newReply) {
     res.json(newReply);
@@ -49,5 +49,4 @@ app.post("/api/comment_replies", (req, res) => {
     res.status(401).json({ error: "Please check your inputs" });
   }
 });
-
 module.exports = app;
