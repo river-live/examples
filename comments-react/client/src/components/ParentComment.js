@@ -1,6 +1,7 @@
 import React from "react";
 import Comment from "./Comment";
 import store from "../lib/store.js";
+import ReplyForm from "./ReplyForm";
 
 const ParentComment = ({ comment, onShowMoreReplies }) => {
   // move this function to CommentList component so that reply form can be shown when "show more replies" is clicked
@@ -40,6 +41,8 @@ const ParentComment = ({ comment, onShowMoreReplies }) => {
               Show More Replies ({comment.replies_count - 1})
             </a>
           )}
+
+          <ReplyForm comment_id={comment.id} />
         </div>
       )}
     </div>

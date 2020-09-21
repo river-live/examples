@@ -19,7 +19,7 @@ class ReplyForm extends Component {
     };
 
     const body = {
-      comment_id: "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e",
+      comment_id: this.props.comment_id,
       reply: newReply,
     };
 

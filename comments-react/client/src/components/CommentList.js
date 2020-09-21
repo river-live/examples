@@ -37,7 +37,7 @@ class CommentList extends React.Component {
               onShowMoreReplies={this.props.onShowMoreReplies}
             />
             {/* Make showing ReplyForm conditional on handleShowReplies */}
-            <ReplyForm />
+            {/* <ReplyForm /> */}
           </>
         ))}
       </div>
