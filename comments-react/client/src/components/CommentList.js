@@ -30,15 +30,11 @@ class CommentList extends React.Component {
       <div className="section">
         <h2 className="title">Comments</h2>
         {store.getState().comments.map((comment) => (
-          <>
-            <ParentComment
-              key={comment.id}
-              comment={comment}
-              onShowMoreReplies={this.props.onShowMoreReplies}
-            />
-            {/* Make showing ReplyForm conditional on handleShowReplies */}
-            {/* <ReplyForm /> */}
-          </>
+          <ParentComment
+            key={comment.id}
+            comment={comment}
+            onShowMoreReplies={this.props.onShowMoreReplies}
+          />
         ))}
       </div>
     );

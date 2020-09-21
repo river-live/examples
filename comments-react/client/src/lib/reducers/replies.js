@@ -13,8 +13,8 @@ export const replies = (state = [], action) => {
     case "REPLY_ADDED":
       // if we are showing all the replies, we want to show the added replies
       // but if we are not showing all the replies, we merely want to update the number of replies
-      return state;
-    // return state.concat(action.payload.newReply);
+      // return state;
+      return state.concat(action.payload.newReply);
 
     default:
       return state;

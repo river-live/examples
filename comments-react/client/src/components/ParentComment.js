@@ -22,27 +22,35 @@ const ParentComment = ({ comment, onShowMoreReplies }) => {
     return reply.comment_id === comment.id;
   });
 
+  const showReplyForm = false;
+
+  const handleShowReplyForm = () => {
+    showReplyForm = true;
+  };
+
   return (
     <div className="box">
       <Comment {...comment} />
       <hr></hr>
-      {replies.length === 0 ? null : (
+      {replies.length === 0 ? (
+        <ReplyForm comment_id={comment.id} />
+      ) : (
         <div className="box">
           {replies.map((reply) => {
             return <Comment key={reply.id} {...reply} />;
           })}
 
-          {comment.replies_count === replies.length ? null : (
+          {comment.replies_count === replies.length ? (
+            <ReplyForm comment_id={comment.id} />
+          ) : (
             <a
               href="#"
               className="is-size-7 mb-2"
               onClick={handleShowMoreReplies}
             >
-              Show More Replies ({comment.replies_count - 1})
+              Show More and Reply ({comment.replies_count - 1})
             </a>
           )}
-
-          <ReplyForm comment_id={comment.id} />
         </div>
       )}
     </div>
