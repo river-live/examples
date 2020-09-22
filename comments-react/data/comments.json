@@ -4,7 +4,7 @@
     "author": "Mark Hyams",
     "body": "Hello World!",
     "postedAt": 1550488214207,
-    "replies_count": 2,
+    "replies_count": 4,
     "replies": [
       {
         "id": "1d549a1b-4db1-4c10-9941-60c3a0c111cb",
@@ -19,6 +19,20 @@
         "author": "Norberto Sauer",
         "body": "You should look at the GitHub account.",
         "postedAt": 1550419112520
+      },
+      {
+        "author": "Alice",
+        "body": "Hey there!",
+        "id": "adbdf5d3-1d7d-40cc-ae43-3a4f06746953",
+        "postedAt": 1600630501310,
+        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e"
+      },
+      {
+        "author": "Bob",
+        "body": "Hi!",
+        "id": "bbdec17b-909e-4c67-9394-65658ac46a52",
+        "postedAt": 1600630971899,
+        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e"
       }
     ]
   },
@@ -88,6 +102,14 @@
     "body": "Good morning sunshine!",
     "id": "f117733d-c353-470a-994a-179e28cdffe9",
     "postedAt": 1600626792112,
+    "replies_count": 0,
+    "replies": []
+  },
+  {
+    "author": "Alice",
+    "body": "Hello world!",
+    "id": "837af765-090f-4fd4-a720-9336737d2943",
+    "postedAt": 1600630470580,
     "replies_count": 0,
     "replies": []
   }
