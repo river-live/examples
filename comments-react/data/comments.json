@@ -4,11 +4,7 @@
     "author": "Mark Hyams",
     "body": "Hello World!",
     "postedAt": 1550488214207,
-<<<<<<< HEAD
-    "replies_count": 4,
-=======
     "replies_count": 3,
->>>>>>> 468f8ccd2d55eb21a3237e03e20190dd875d446b
     "replies": [
       {
         "id": "1d549a1b-4db1-4c10-9941-60c3a0c111cb",
@@ -25,24 +21,10 @@
         "postedAt": 1550419112520
       },
       {
-<<<<<<< HEAD
-        "author": "Alice",
-        "body": "Hey there!",
-        "id": "adbdf5d3-1d7d-40cc-ae43-3a4f06746953",
-        "postedAt": 1600630501310,
-        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e"
-      },
-      {
-        "author": "Bob",
-        "body": "Hi!",
-        "id": "bbdec17b-909e-4c67-9394-65658ac46a52",
-        "postedAt": 1600630971899,
-=======
         "author": "Mark",
         "body": "hello",
         "id": "42f1d9a3-de0d-4d3c-9820-453cb31a6312",
         "postedAt": 1600720983745,
->>>>>>> 468f8ccd2d55eb21a3237e03e20190dd875d446b
         "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e"
       }
     ]
