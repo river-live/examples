@@ -4,7 +4,7 @@
     "author": "Mark Hyams",
     "body": "Hello World!",
     "postedAt": 1550488214207,
-    "replies_count": 3,
+    "replies_count": 2,
     "replies": [
       {
         "id": "1d549a1b-4db1-4c10-9941-60c3a0c111cb",
@@ -19,13 +19,6 @@
         "author": "Norberto Sauer",
         "body": "You should look at the GitHub account.",
         "postedAt": 1550419112520
-      },
-      {
-        "author": "Mark",
-        "body": "hello",
-        "id": "42f1d9a3-de0d-4d3c-9820-453cb31a6312",
-        "postedAt": 1600720983745,
-        "comment_id": "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e"
       }
     ]
   },
@@ -60,43 +53,19 @@
     ]
   },
   {
-    "author": "Bob",
-    "body": "Hello",
-    "id": "3ab71dfb-8883-4909-adf1-773f36f9e22a",
-    "postedAt": 1597677034251,
+    "author": "Catherine",
+    "body": "Testing the app!",
+    "id": "b88d48d1-7cca-4fdd-9d36-97ba05d6c40b",
+    "postedAt": 1600812433555,
     "replies_count": 1,
-    "replies": []
-  },
-  {
-    "author": "Catherine",
-    "body": "Hello World",
-    "id": "cc8fc365-a1a4-4195-835c-da856378fb0e",
-    "postedAt": 1600626746109,
-    "replies_count": 0,
-    "replies": []
-  },
-  {
-    "author": "Alice",
-    "body": "Hi!",
-    "id": "dc990bb9-c51e-46f5-9543-cad23d1a44b5",
-    "postedAt": 1600626764494,
-    "replies_count": 0,
-    "replies": []
-  },
-  {
-    "author": "Catherine",
-    "body": "Good morning sunshine!",
-    "id": "f117733d-c353-470a-994a-179e28cdffe9",
-    "postedAt": 1600626792112,
-    "replies_count": 0,
-    "replies": []
-  },
-  {
-    "author": "Alice",
-    "body": "Hello world!",
-    "id": "837af765-090f-4fd4-a720-9336737d2943",
-    "postedAt": 1600630470580,
-    "replies_count": 0,
-    "replies": []
+    "replies": [
+      {
+        "author": "Bob",
+        "body": "Everything working on this side!",
+        "id": "0fae413b-fa2a-4295-b77d-13c566216094",
+        "postedAt": 1600812453975,
+        "comment_id": "b88d48d1-7cca-4fdd-9d36-97ba05d6c40b"
+      }
+    ]
   }
 ]
