@@ -19,7 +19,7 @@ class ReplyForm extends Component {
     };
 
     const body = {
-      comment_id: "4b2d74e6-7d1a-4ba3-9e95-0f52ee8ebc6e",
+      comment_id: this.props.comment_id,
       reply: newReply,
     };
 
@@ -45,9 +45,9 @@ class ReplyForm extends Component {
     return (
       <div className="section">
         <form onSubmit={this.handleSubmit} action="">
-          <h2 className="subtitle">Reply to Comment</h2>
+          <h2 className="is-size-4 subtitle">Reply to Comment</h2>
           <div className="field">
-            <label className="label">Your Name</label>
+            <label className="label is-size-7">Your Name</label>
             <input
               className="input"
               value={this.state.author}
@@ -58,7 +58,7 @@ class ReplyForm extends Component {
           </div>
 
           <div className="field">
-            <label className="label">Your Comment</label>
+            <label className="label is-size-7">Your Comment</label>
             <textarea
               className="textarea"
               value={this.state.body}
